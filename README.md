@@ -42,6 +42,7 @@ This project demonstrates my ability to apply intermediate-level web development
 
 👉 Loom Video: [https://www.loom.com/share/fe15f2e3d09e409886da5594c0fa3c69?sid=96cbcd62-22d6-48f8-b9a8-41f89fb56a30]
 
+👉 LinkedIn post: [ https://www.linkedin.com/posts/vasundhara-naga-durga-addala-83b70925a_task2-webdevelopment-internship-activity-7342426409769803776-Vlep?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD_SNW8BsK90PAWcBMH25bdPt1VMc5S-rOM ]
 
 ---
 
