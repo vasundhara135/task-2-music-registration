@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Class Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Register for Our Music Classes 🎵</h1>
+  </header>
+
+  <form id="musicForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" />
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" />
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="text" id="mobile" name="mobile" />
+
+    <div id="instrumentGallery">
+  <img src="images/guitar.webp" alt="Guitar" class="gallery-img" onclick="showAbout('Guitar')" />
+  <img src="images/piano.png" alt="Piano" class="gallery-img" onclick="showAbout('Piano')" />
+  <img src="images/violin.jpg" alt="Violin" class="gallery-img" onclick="showAbout('Violin')" />
+  <img src="images/drums.webp" alt="Drums" class="gallery-img" onclick="showAbout('Drums')" />
+  <img src="images/flute.avif" alt="Flute" class="gallery-img" onclick="showAbout('Flute')" />
+  </div>
+
+<div id="galleryAbout" style="display:none; margin: 10px 0; padding: 10px; background: rgba(255,255,255,0.8); border-radius: 5px; text-align: center;"></div>
+
+    
+    <p>Select Instrument:</p>
+
+    <div class="instrument-option">
+      <input type="radio" id="guitar" name="instrument" value="Guitar" />
+      <label for="guitar">
+        <img src="images/guitar.webp" alt="Guitar" class="instrument-img" />
+        Guitar
+      </label>
+    </div>
+
+    <div class="instrument-option">
+      <input type="radio" id="piano" name="instrument" value="Piano" />
+      <label for="piano">
+        <img src="images/piano.png" alt="Piano" class="instrument-img" />
+        Piano
+      </label>
+    </div>
+
+    <div class="instrument-option">
+      <input type="radio" id="violin" name="instrument" value="Violin" />
+      <label for="violin">
+        <img src="images/violin.jpg" alt="Violin" class="instrument-img" />
+        Violin
+      </label>
+    </div>
+
+    <div class="instrument-option">
+      <input type="radio" id="drums" name="instrument" value="Drums" />
+      <label for="drums">
+        <img src="images/drums.webp" alt="Drums" class="instrument-img" />
+        Drums
+      </label>
+    </div>
+
+    <div class="instrument-option">
+      <input type="radio" id="flute" name="instrument" value="Flute" />
+      <label for="flute">
+        <img src="images/flute.avif" alt="Flute" class="instrument-img" />
+        Flute
+      </label>
+    </div>
+    <p id="feeDisplay">Fee: ₹0</p>
+
+    <label for="schedule">Preferred Schedule:</label>
+    <select id="schedule" name="schedule">
+      <option value="">--Select Schedule--</option>
+      <option value="Morning">Morning</option>
+      <option value="Afternoon">Afternoon</option>
+      <option value="Evening">Evening</option>
+    </select>
+
+    <label for="timeSlot">Preferred Time Slot:</label>
+    <select id="timeSlot" name="timeSlot">
+      <option value="">--Select Time--</option>
+    </select>
+
+    <label for="experience">Experience Level:</label>
+    <select id="experience" name="experience">
+    <option value="">--Select Level--</option>
+    <option value="Beginner">Beginner</option>
+    <option value="Intermediate">Intermediate</option>
+    <option value="Advanced">Advanced</option>
+    </select>
+
+
+    <label for="comments">Comments / Notes:</label>
+    <textarea id="comments" name="comments"></textarea>
+    <label for="rating">How much do you love music? (1-5 stars)</label>
+    <select id="rating" name="rating">
+    <option value="">--Select--</option>
+    <option value="1">⭐</option>
+    <option value="2">⭐⭐</option>
+    <option value="3">⭐⭐⭐</option>
+    <option value="4">⭐⭐⭐⭐</option>
+    <option value="5">⭐⭐⭐⭐⭐</option>
+  </select>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="summaryBox" style="display: none; margin-top: 20px;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
